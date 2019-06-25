@@ -1,0 +1,33 @@
+
+Download and install Java SE development kit for windows 10. (jdk-10.0.1_windows-x64_bin.exe)
+http://www.oracle.com/technetwork/java/javase/downloads/jdk10-downloads-4416644.html
+
+Download and install Eclipse JEE oxygen for windows64 bit. eclipse-jee-oxygen-3a-win32-x86_64
+http://www.eclipse.org/downloads/
+
+Download the SimpleNLG-4.4.8-sources.jar file from Maven central repository.
+https://search.maven.org/#search%7Cga%7C1%7Ca%3A%22SimpleNLG%22
+
+Make sure java and javac is running on your computer.
+cmd --> java
+cmd --> javac
+
+Set the JAVA_HOME directory in your environment variable
+
+JAVA_HOME --> C:\Program Files\Java\jdk-10.0.1
+CLASSPATH --> C:\Program Files\Java\jre-10.0.1\lib
+
+
+Open eclipse
+
+1. Package explorer -> right click -> program -> new java project. Give project name test.
+2. Right click on the project name -> build path - > right click --> configire build path. Libraries --> classes --> add external jar file.(add simple nlg jar file which you have downloaded from central repository from maven)
+3. Apply and close.
+
+4. Test --> right click -> src -> package --> name the package --> com.test.
+
+5. add new class in com.test --> name it simpleNLG.
+
+6. You can write the Java code inside this newclass file.
+
+ctrl+tab to get the method details.

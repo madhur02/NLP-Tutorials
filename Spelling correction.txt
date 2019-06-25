@@ -1,0 +1,14 @@
+import enchant
+import wx
+from enchant.checker import SpellChecker
+from enchant.checker.wxSpellCheckerDialog import wxSpellCheckerDialog
+from enchant.checker.CmdLineChecker import CmdLineChecker
+
+a = "Ceci est un text avec beuacuop d'ereurs et pas snychro"
+chkr = enchant.checker.SpellChecker("fr_FR")
+chkr.set_text(a)
+cmdln = CmdLineChecker()
+cmdln.set_checker(chkr)
+b = cmdln.run()
+c = chkr.get_text()  # returns corrected text
+print c
