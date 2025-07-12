@@ -1,13 +1,8 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Thu Jun  6 12:56:07 2019
 
-@author: J554696
-"""
 
 import pandas as pd
 import numpy as np
-df = pd.read_excel(r"C:\Users\J554696\Desktop\A1 Sector .xlsx", names= 'A B C D E F G H I J K L'.split())
+df = pd.read_excel(r"A1 Sector .xlsx", names= 'A B C D E F G H I J K L'.split())
 
 df.dropna(thresh=1 , inplace = True)
 df.dropna(thresh=1 ,axis=1, inplace = True)
