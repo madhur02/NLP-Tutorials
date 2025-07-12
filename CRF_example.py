@@ -1,11 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Wed Dec  5 18:50:54 2018
-
-@author: J554696
-"""
-
-#invoke libraries
 from bs4 import BeautifulSoup as bs
 from bs4.element import Tag
 import codecs
