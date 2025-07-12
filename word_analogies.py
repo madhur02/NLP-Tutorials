@@ -1,9 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Fri Apr 19 11:25:10 2019
-
-@author: J554696
-"""
 import numpy as np
 from sklearn.metrics.pairwise import pairwise_distances
 
@@ -53,7 +47,7 @@ def nearest_neighbors(w, n=5):
 word2vec = {}
 embedding = []
 idx2word = []
-with open(r'C:\Users\J554696\Downloads\glove.6B.300d.txt', encoding='utf-8') as f:
+with open(r'glove.6B.300d.txt', encoding='utf-8') as f:
   # is just a space-separated text file in the format:
   # word vec[0] vec[1] vec[2] ...
   for line in f:
