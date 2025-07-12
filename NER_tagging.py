@@ -15,14 +15,14 @@ style.use('fivethirtyeight')
 
 # Process text  
 def process_text():
-	raw_text = open("C:\\Users\\J554696\\Desktop\\news_article.txt").read()
+	raw_text = open("news_article.txt").read()
 	token_text = word_tokenize(raw_text)
 	return token_text
 
 # Stanford NER tagger    
 def stanford_tagger(token_text):
-	st = StanfordNERTagger('C:\\Users\\J554696\\Desktop\\stanford-ner-2018-10-16\\classifiers\\english.all.3class.distsim.crf.ser.gz',
-							'C:\\Users\\J554696\\Desktop\\stanford-ner-2018-10-16\\stanford-ner.jar',
+	st = StanfordNERTagger('stanford-ner-2018-10-16\\classifiers\\english.all.3class.distsim.crf.ser.gz',
+							'stanford-ner-2018-10-16\\stanford-ner.jar',
 							encoding='utf-8')   
 	ne_tagged = st.tag(token_text)
 	return(ne_tagged)
