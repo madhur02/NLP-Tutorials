@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Wed Jan 16 10:55:38 2019
-
-@author: J554696
-"""
-
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -46,7 +39,7 @@ def sentiment(rating):
     return sent
 
 def import_pos_neg_corpus():
-    lexicon_path = "C:\\Users\\J554696\\Desktop\\Sentiment Analysis\\Rahul_Data_exploration\\"
+    lexicon_path = "Data_exploration"
     negative_file = os.path.join(lexicon_path,"neg_words.txt")
     positive_file = os.path.join(lexicon_path,"pos_words.txt")
     
@@ -107,7 +100,7 @@ def check_fullstop(string):
     return result 
 
 def main_handler():
-    df  = pd.read_csv(r'C:\Users\J554696\Desktop\Sentiment Analysis\Clean_test.csv')
+    df  = pd.read_csv(r'Clean_test.csv')
     df.dropna(inplace = True)
     df.drop(index = df[df["length"] == "#NAME?"].index,inplace = True)
     df["length"] = df["length"].astype("int")
