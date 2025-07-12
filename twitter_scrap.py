@@ -2,12 +2,11 @@ import oauth2 as oauth
 #import urllib2 as urllib
 import urllib.request as urllib
 
-# See assignment1.html instructions or README for how to get these credentials
 
-api_key = "3Rk6zVTw0GtB12WIOaUNMKZHm"
-api_secret = "Rm9tXMXOLUNJu6JV1acmGW4xkuLVO9Oa3ITErDd2W7TfAEuO2m"
-access_token_key = "2609984694-1hRmhVf3ih7KWFtuUIgMe1ZdWgXQy1qLnqgHdVy"
-access_token_secret = "OCqLw4zULqjh8tX79HE1BehOVClrkgN5DHXpsQQmlCxdy"
+api_key = ""
+api_secret = ""
+access_token_key = ""
+access_token_secret = ""
 
 _debug = 0
 
@@ -59,7 +58,7 @@ def get_url_data(url_link,uid,upassword):
     Pass Input as a html url link and get html data
     @@ function takes input as url and return content of that file.
     """
-    prin_px = "https://" + uid + ":" + upassword + "@pfgproxy.principal.com:80"
+    prin_px = "https://" + uid + ":" + upassword + 
     r = requests.get(url_link, proxies={"https":prin_px})
     #content = r.content.lower()
     content = r.content
@@ -67,7 +66,7 @@ def get_url_data(url_link,uid,upassword):
   
 def fetchsamples():
   url = "https://stream.twitter.com/1/statuses/sample.json"
-  prin_px = "https://" + "J554696" + ":" + "Sep@2018" + "@pfgproxy.principal.com:80"
+  prin_px = "https://" + <username> + ":" + <passowrd> 
   parameters = {"https":prin_px}
   response = twitterreq(url, "GET", parameters)
   for line in response:
